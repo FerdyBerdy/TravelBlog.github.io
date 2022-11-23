@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="indexx.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="swirl.png" rel="shortcut icon" type="image/x-icon">
+    <title>All Around, Angus!</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <div class="logo">
+                <li class="one">
+                    <a>
+                        All AROUND, ANGUS!
+                    </a>
+                </li>
+            </div>
+
+            <div class="mainnav">
+                <li>
+                    <a>
+                        BLOG
+                    </a>
+                </li>
+
+                <li>
+                    <a>
+                    CONTACT  
+                    </a>
+                </li>
+
+                <li>
+                    <a>
+                    ABOUT 
+                    </a>
+                </li>
+
+                <li>
+                    <a>
+                    <img src="searchicon.png">
+                    </a>
+                </li>
+            </div>
+
+            <div class="socials">
+                <li>
+                    <a>
+                    <img src="instagramicon.png">
+                    </a>
+                </li>
+
+
+
+                <li>
+                    <a>
+                    <img src="facebookicon.png"> 
+                    </a>
+                </li>
+
+
+
+                <li>
+                    <a>
+                    <img src="twittericon.png">
+                    </a>
+                </li>
+
+                <li>
+                    <a>
+                        <img src="youtubeicon.png">
+                    </a>
+                </li>
+            </div>
+
+
+        
+        </ul>
+    </div>
+
+    <header class="header">
+        <nav class="secondnav">
+            <div class="sncontent">
+                <div class="secondlogo">
+                    <p>All AROUND, ANGUS!</p>
+                </div>
+
+                <div class="navlinks">
+                    <a class="navlink navlink--active"  href="index.html">HOME</a>
+                    <a class="navlink" href="*">BLOG</a>
+                    <a class="navlink" href="*">CONTACT</a>
+                    <a class="navlink" href="*">ABOUT</a>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </nav>
+        <button class="headerbutton" id="btnNav" type="button">
+            <img src="menu.png" class="menuimg">
+        </button>
+    </header>
+    <div class="encompass">
+        
+
+
+
+        <div class="farm">
+            <h1>All  AROUND,  ANGUS!</h1>
+        </div>
+
+
+
+
+
+
+        <div class="paraintro">
+            <p>Welcome to my travel blog!</p>
+        </div>
+
+
+
+
+
+        <div class="*">
+            <img src="">
+        </div>
+
+        <div class="blogposts">
+            <div class="titleblogposts">
+                <h2>Recent Posts</h2>
+            </div>
+            <div class="prevpostsall">
+                <div class="prevpostsone"></div>
+                <div class="prevpoststwo"></div>
+                <div class="prevpoststhree"></div>
+                <div class="prevpostsfour"></div>
+                <div class="prevpostsfive"></div>
+                <div class="prevpostssix"></div>
+            </div>
+            <p class="seemore">Click to see more</p>
+        </div>
+
+
+        <div class="subscribe">
+            <h2>SUBSCRIBE TO KEEP ON TRACK</h2>
+            <p>Join 20,000+ people to keep up with my journey</p>
+            <label>Name</label>
+            <input type="text">
+            <label>Email Address</label>
+            <input type="text">
+            <button>Subscribe</button>
+        </div>
+
+
+        <div class="me">
+            <div>
+                <h2>YO, IT'S ANGUS!</h2>
+                <p>Hey, it’s Angus!  I’m so happy to be able to share my travel experience with y’all and hope you stay to read on! A follow Plein air painter and ex-graphic designer, I took on a blog around the world after being stumped with the follies of being homesick. My patrons look forward to my paintings and posts which ultimately support my ongoing streak of travels.</p>
+            </div>
+            <img src="oo.png" class="shadow">
+        </div>
+
+
+
+
+
+        <form>
+            <h2>Add a Comment</h2>
+                <label>
+                    Type your comment here
+                </label>
+                <textarea></textarea>
+                <input type="submit">
+    
+        </form>
+    </div>
+    <script>
+        window.addEventListener("load", () => {
+            document.body.classList.remove("preload");
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const nav = document.querySelector(".secondnav");
+        
+
+            document.querySelector("#btnNav").addEventListener("click", () => {
+                 nav.classList.add("secondnav--open");
+             })
+
+            document.querySelector(".overlay").addEventListener("click", () => {
+                 nav.classList.remove("secondnav--open");
+            })
+
+        });
+    </script>
+</body>
+</html>

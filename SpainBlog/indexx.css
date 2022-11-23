@@ -1,0 +1,465 @@
+@font-face {
+    font-family: Western Retro;
+    src: url(Western\ Retro.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(Roboto-Regular.ttf);
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+p, h2, label, button {
+    font-family: roboto;
+}
+
+
+html{
+    overflow-x: hidden;
+}
+
+
+
+
+
+.nav img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav {
+      text-decoration: none;
+     color: white;
+     background-color: rgb(0, 0, 0);
+     position: fixed;
+     z-index: 1000;
+     width: 100%;
+     display: none;
+    
+
+}
+
+
+.nav ul{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    text-decoration-style: none;
+    list-style: none;
+}
+
+.mainnav{
+    display: flex;
+    flex-direction:row; 
+    width: 400px; 
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    width: 100%;
+    padding-bottom: 10px;
+    height: var(--header-height);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    z-index: 99;
+    
+  }
+  
+  .headerbutton{
+    background-color: white;
+    border: none;
+    top: 5%;
+    width: var(--header-height);
+    flex-shrink: 0;
+    cursor: pointer;
+  
+  }
+  
+  
+  .menuimg{
+    width: 20%;
+  }
+  
+  .secondnav {
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  
+  
+  .sncontent{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100vh;
+    width: 70%;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+  }
+  
+  .mainnav {
+    z-index: 200;
+    cursor: pointer;
+    font-family: roboto;
+  }
+
+
+
+  
+  .secondnav--open .sncontent {
+    transform: translateX(0); 
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    visibility: hidden;
+    opacity: 0;
+   
+  }
+  
+  
+  
+  .secondnav--open .overlay{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .secondlogo{
+    color: white;
+    font-family: Western Retro;
+    padding-left: 16%;
+    padding-bottom: 20%;
+  }
+  
+  .navlink {
+    color: white;
+    text-decoration: none;
+    font-family: roboto;
+    display: flex;
+    align-items: center;
+    font-size: 2 rem;
+    padding: 10% 16%;
+    
+  }
+  
+  .navlink--active{
+    color: rgb(255, 208, 0);
+  }
+  
+  .preload *{
+    transition: none !important;
+  }
+
+
+.socials{
+    display: flex;
+    flex-direction:row; 
+    width: 200px; 
+    justify-content: space-between;
+    position: relative;
+    right: 5%;
+    cursor: pointer;
+   
+}
+
+
+.one {
+    font-family: Western Retro;
+    cursor: pointer;
+    
+}
+
+
+
+.farm {
+    background-image: url(ooo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 400px;
+    border: solid black 20px;
+    margin-left: 0;
+    border-left: none;
+    border-right: none;
+
+
+}
+
+.farm h1 {
+    color: rgb(255, 255, 255);
+    font-family: Western Retro;
+    font-size: 8rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.3em;
+    word-spacing: 0.2em;
+    top: 26%;
+    position: relative;
+
+
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+
+
+.globe {
+    background-color: black;
+
+    color: white;
+  
+}
+
+.globe img{
+    width: 70%;
+}
+
+
+.titleblogposts {
+
+    text-align: center;
+    padding: none;
+    margin: none;
+}
+
+
+
+.prevpostsall {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    margin: 0 auto;
+
+}
+
+input[type=submit] {
+    width: 70px;
+}
+
+.me {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+
+}
+
+.me img {
+    width: 500px;
+
+}
+
+
+p{
+    font-family: roboto;
+}
+
+.prevpostsone {
+    margin: 0.8em;
+    height: 20%;
+    background-image:url(editsix.png);
+    background-repeat: none;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.prevpoststwo {
+    margin: 0.8em;
+    height: 20%;
+    background-image:url(edittwo.png);
+    background-repeat: none;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.prevpoststhree {
+    margin: 0.8em;
+    height: 20%;
+    background-image:url(editthree.png);
+    background-repeat: none;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.prevpostsfour {
+    margin: 0.8em;
+    height: 20%;
+    background-image:url(editone.png);
+    background-repeat: none;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.prevpostsfive {
+    margin: 0.8em;
+
+    background-image:url(editfour.png);
+    background-repeat: none;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+.prevpostssix {
+    margin: 0.8em;
+    height: 20%;
+    background-image:url(editfive.png);
+    background-repeat: none;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.subscribe {
+    background-image: url(wp.jpg);
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 400px;
+    margin: 0 auto;
+}
+
+
+
+.encompass div {
+    margin-bottom: 10%;
+}
+
+input {
+    height: 17px;
+    width: 130px;
+}
+
+
+textarea {
+    width: 50%;
+}
+button {
+    height: 20px;
+}
+
+.globy{
+    display: inline;
+}
+
+@media screen and (min-width: 780px) {
+    
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .nav{
+        display: inline;
+    }
+    
+
+    .header{
+        display: none;
+    }
+
+    .farm {
+        height: 730px;
+    }
+
+    .prevpostsall {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        grid-gap: 5px;
+        width: 90%;
+        justify-content:  center;
+        margin: 0 auto;
+    
+    }
+
+    .prevpostsone {
+        margin: 0.8em;
+        height: 320px;
+        background-image:url(editsix.png);
+        background-repeat: none;
+        background-size: cover;
+        cursor: pointer;
+    }
+    
+    .prevpoststwo {
+        margin: 0.8em;
+        height: 320px;
+        background-image:url(edittwo.png);
+        background-repeat: none;
+        background-size: cover;
+        cursor: pointer;
+    }
+    
+    .prevpoststhree {
+        margin: 0.8em;
+        height: 320px;
+        background-image:url(editthree.png);
+        background-repeat: none;
+        background-size: cover;
+        cursor: pointer;
+    }
+    
+    .prevpostsfour {
+        margin: 0.8em;
+        height: 320px;
+        background-image:url(editone.png);
+        background-repeat: none;
+        background-size: cover;
+        cursor: pointer;
+    }
+    
+    .prevpostsfive {
+        margin: 0.8em;
+        height: 320px;
+        background-image:url(editfour.png);
+        background-repeat: none;
+        background-size: cover;
+        cursor: pointer;
+    }
+    
+    
+    .prevpostssix {
+        margin: 0.8em;
+        height: 320px;
+        background-image:url(editfive.png);
+        background-repeat: none;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+
+    .shadow {
+        display: inline-block;
+    }
+}
